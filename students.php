@@ -64,7 +64,7 @@
                 <a href="https://www.youtube.com/watch?v=OcR03c9DQe0" class="btn btn-danger">Youtube</a>
             </div>
         </div>
-        <div class="card mt-3 bg-light">
+        <div class="card mt-3 mb-3 bg-light">
             <div class="card-header text-center">
                 <h5>All Student Details</h5>
             </div>

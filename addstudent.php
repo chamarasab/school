@@ -32,7 +32,7 @@
             </div>
     </nav>
     <div class="container">
-        <div class="card mt-4 mb-2 bg-light">
+        <div class="card mt-3 mb-2 bg-light">
             <h4 class="card-title mx-auto mt-4">New Student Form</h4>
             <div class="card-body">
                 <form method="POST" class="my-3 mx-3">
