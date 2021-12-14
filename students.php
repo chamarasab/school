@@ -89,8 +89,8 @@
                                     <td><?php echo $document['contact']; ?></td>
                                     <!-- Delete Button -->
                                     <td style="text-align:right">
-                                        <a href="http://localhost/school/deletestudents.php?id=<?php echo $document['id']; ?>" class="btn btn-danger">Delete</a>
-                                        <a href="http://localhost/school/updatestudents.php?id=<?php echo $document['id']; ?>" class="btn btn-warning">Update</a>
+                                        <a href="http://localhost/school/deletestudents.php?id=<?php echo $document['id']; ?>" class="btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+                                        <a href="http://localhost/school/updatestudents.php?id=<?php echo $document['id']; ?>" class="btn btn-warning"><i class="fa fa-pencil" aria-hidden="true"></i></a>
                                     </td>
                                 </tr>
                             <?php } ?>
