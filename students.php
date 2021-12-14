@@ -3,7 +3,7 @@
 
     $cursor = $students->find();
 
-    if (isset($_POST['submit'])) {
+    /*if (isset($_POST['submit'])) {
        $post_data = array();
        $post_data['id'] = $_POST['txtId']; 
        $post_data['name'] = $_POST['txtName']; 
@@ -15,7 +15,7 @@
        $post_data = array();
        $_POST = array();
        header("Refresh:0");
-    }
+    }*/
 ?>
 
 <!DOCTYPE html>
@@ -77,6 +77,7 @@
                                 <th scope="col">Name</th>
                                 <th scope="col">Address</th>
                                 <th scope="col">Contact</th>
+                                <th scope="col" style="text-align:right"></th>
                             </tr>
                         </thead>
                         <tbody  >
@@ -86,6 +87,11 @@
                                     <td><?php echo $document['name']; ?></td>
                                     <td><?php echo $document['address']; ?></td>
                                     <td><?php echo $document['contact']; ?></td>
+                                    <!-- Delete Button -->
+                                    <td style="text-align:right">
+                                        <a href="http://localhost/school/deletestudents.php?id=<?php echo $document['id']; ?>" class="btn btn-danger">Delete</a>
+                                        <a href="http://localhost/school/updatestudents.php?id=<?php echo $document['id']; ?>" class="btn btn-warning">Update</a>
+                                    </td>
                                 </tr>
                             <?php } ?>
                         </tbody>
